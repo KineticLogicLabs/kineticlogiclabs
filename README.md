@@ -21,7 +21,7 @@ I am currently developing and documenting parts for:
 
 ### 🛒 3D Print Shop
 High-performance STLs optimized for high-speed printing. 
-> *Status: In Development - Gumroad Integration Pending.*
+> *Status: In Development
 
 ---
 
