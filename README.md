@@ -2,7 +2,7 @@
 
 Welcome to the official repository for **Kinetic Logic Labs**. This space serves as the central hub for my engineering designs, 3D printing workflows, and academic research projects.
 
-[View the Live Site here!](https://kineticlogiclabs.github.io/kineticlogiclabs/)
+[View the Live Site here!](https://kineticlogiclabs.github.io)
 
 ---
 
