@@ -1,14 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Kinetic Logic Labs | Science Olympiad Mission Possible</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -29,32 +30,13 @@
             }
         }
     </script>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
             scroll-behavior: smooth;
-            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        /* Fix mobile input zoom by ensuring font size is at least 16px for inputs on small screens */
-        @media screen and (max-width: 768px) {
-            input, select, textarea {
-                font-size: 16px !important;
-            }
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .glass-nav {
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-        }
-        
-        /* High-Visibility Gradient Text */
         .gradient-text {
             background-size: 100%;
             -webkit-background-clip: text;
@@ -62,48 +44,35 @@
             -webkit-text-fill-color: transparent;
             color: transparent;
             display: inline-block;
-            /* Default: High-contrast Light Mode Gradient */
             background-image: linear-gradient(to right, #0a2351, #1978e5);
         }
-        
-        /* Dark Mode Override */
         .dark .gradient-text {
             background-image: linear-gradient(to right, #ffffff, #60a5fa);
         }
-
-        /* Scroll Animations */
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
-        .reveal-delay-3 { transition-delay: 0.3s; }
-
-        .hamburger-line {
-            transition: all 0.3s ease;
-            transform-origin: center;
-        }
     </style>
 
-<link rel="stylesheet" href="index.css">
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react/": "https://esm.sh/react@^19.2.4/"
-  }
-}
-</script>
-  <script type="module" crossorigin src="assets/index-CqRqq3ck.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "react/": "https://esm.sh/react@^19.2.4/"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="assets/index-CqRqq3ck.css"> 
+    <script type="module" crossorigin src="assets/index-CqRqq3ck.js"></script>
 </head>
+
 <body class="bg-white text-black dark:bg-black dark:text-white selection:bg-primary/30">
-    <div id="root"></div>
+    <div id="root">
+        <div class="flex h-screen items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold animate-pulse">Loading Kinetic Logic Labs...</h1>
+                <p class="text-gray-500 mt-2">If this persists, check the browser console for 404 errors.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
