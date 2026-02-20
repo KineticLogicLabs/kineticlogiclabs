@@ -22,40 +22,20 @@
                         "card-dark": "#0A0A0A",
                         "border-dark": "#1A1A1A"
                     },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Inter', 'sans-serif']
-                    }
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
                 }
             }
         }
     </script>
     
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            background-color: #000;
-            color: #fff;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; margin: 0; }
         .gradient-text {
             background-size: 100%;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            color: transparent;
-            display: inline-block;
             background-image: linear-gradient(to right, #ffffff, #60a5fa);
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
         }
     </style>
 
@@ -71,11 +51,11 @@
 
     <script type="module" crossorigin src="index-CqRqq3ck.js"></script>
 </head>
-<body class="bg-white text-black dark:bg-black dark:text-white selection:bg-primary/30">
+<body class="bg-black text-white selection:bg-primary/30">
     <div id="root">
-        <div class="flex flex-col h-screen items-center justify-center bg-black">
-            <h1 class="text-2xl font-bold animate-pulse text-white">Initializing Kinetic Logic Labs...</h1>
-            <p class="text-gray-500 mt-4">If the site doesn't load, ensure your .js file is in the root folder.</p>
+        <div class="flex flex-col h-screen items-center justify-center">
+            <h1 class="text-3xl font-bold animate-pulse">Initializing Kinetic Logic Labs...</h1>
+            <p class="text-gray-500 mt-4 text-sm tracking-widest uppercase">System Check in Progress</p>
         </div>
     </div>
 </body>
