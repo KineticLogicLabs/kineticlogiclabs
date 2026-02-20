@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-
+    
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -23,20 +23,15 @@
                         "border-dark": "#1A1A1A"
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Inter', 'sans-serif']
+                        sans: ['Inter', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-
+    
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s ease; }
         .gradient-text {
             background-size: 100%;
             -webkit-background-clip: text;
@@ -46,9 +41,7 @@
             display: inline-block;
             background-image: linear-gradient(to right, #0a2351, #1978e5);
         }
-        .dark .gradient-text {
-            background-image: linear-gradient(to right, #ffffff, #60a5fa);
-        }
+        .dark .gradient-text { background-image: linear-gradient(to right, #ffffff, #60a5fa); }
     </style>
 
     <script type="importmap">
@@ -61,17 +54,12 @@
     }
     </script>
 
-    <link rel="stylesheet" href="assets/index-CqRqq3ck.css"> 
-    <script type="module" crossorigin src="assets/index-CqRqq3ck.js"></script>
+    <script type="module" crossorigin src="index-CqRqq3ck.js"></script>
 </head>
-
-<body class="bg-white text-black dark:bg-black dark:text-white selection:bg-primary/30">
+<body class="bg-white text-black dark:bg-black dark:text-white">
     <div id="root">
         <div class="flex h-screen items-center justify-center">
-            <div class="text-center">
-                <h1 class="text-2xl font-bold animate-pulse">Loading Kinetic Logic Labs...</h1>
-                <p class="text-gray-500 mt-2">If this persists, check the browser console for 404 errors.</p>
-            </div>
+            <h1 class="text-xl animate-pulse">Initializing Kinetic Logic Labs...</h1>
         </div>
     </div>
 </body>
