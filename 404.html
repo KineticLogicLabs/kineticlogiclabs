@@ -1,0 +1,15 @@
+---
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html>
+<script>
+  // This catches EVERYTHING on your site that 404s
+  var path = window.location.pathname.toLowerCase();
+
+  // If they typed /MissionPossible (or any variation), send them to the real one
+  if (path.includes("missionpossible")) {
+    window.location.replace("https://kineticlogiclabs.github.io/missionpossible/");
+  }
+</script>
+</html>
