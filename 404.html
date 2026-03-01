@@ -3,13 +3,40 @@ permalink: /404.html
 ---
 <!DOCTYPE html>
 <html>
-<script>
-  // This catches EVERYTHING on your site that 404s
-  var path = window.location.pathname.toLowerCase();
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting | Kinetic Logic Labs</title>
+    <script type="text/javascript">
+        // 1. Get the path the user typed (e.g., /MissionPossible/)
+        var path = window.location.pathname;
+        var lowercasePath = path.toLowerCase();
 
-  // If they typed /MissionPossible (or any variation), send them to the real one
-  if (path.includes("missionpossible")) {
-    window.location.replace("https://kineticlogiclabs.github.io/missionpossible/");
-  }
-</script>
+        // 2. Map the "wrong" versions to the "right" lowercase versions
+        // You can add more projects to this list as you build them!
+        var redirects = {
+            "/missionpossible": "/missionpossible/",
+            "/mission-possible": "/missionpossible/",
+            "/mp": "/missionpossible/"
+        };
+
+        // 3. Check if what they typed matches a known project
+        for (var key in redirects) {
+            if (lowercasePath.includes(key)) {
+                window.location.replace("https://kineticlogiclabs.github.io" + redirects[key]);
+                break;
+            }
+        }
+
+        // 4. If it's a total mystery, send them back to your main portfolio home
+        // (Wait 3 seconds so they can see it's a 404 if you prefer, or just redirect)
+        setTimeout(function() {
+            if (window.location.hostname !== "") { 
+                window.location.replace("https://kineticlogiclabs.github.io/");
+            }
+        }, 500);
+    </script>
+</head>
+<body>
+    <p>Searching for laboratory records... redirecting you now.</p>
+</body>
 </html>
